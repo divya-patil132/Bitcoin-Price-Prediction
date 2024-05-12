@@ -21,11 +21,13 @@ The data set has a total of 2713 columns and a total of 7 rows
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/5ba39621-4fe9-4a54-b5d8-8fa67dc912c7)
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/b5056006-f171-4af8-b15c-3361f215c59b)
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/630ee2bb-763a-4efd-9c2e-604f95395f26)
+
 The above picture shows that there are no missing values or null values in the data set. All the variables in 
 the data set are float64, which are all numerical variables. 
 Using the library matplotlib with the functions plt.plot() detailed description of the data is given below.
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/bc3f9f21-ed68-42eb-953f-7c43f2389fce)
+
 • Open
 It is the most important time to check out for the price of the bitcoin at this moment because it is 
 starting for the day when the open price is known. This is because the open variable in the data set 
@@ -38,14 +40,16 @@ equals 16106.42.
 
 
 1.Long short-term Memory (LSTM)
-    Data preparation 
-    Here the Closing price is chosen as the target variable and stored in a new data frame. With the help of 
-    Mathlab library the developer as plotted the graph of the Closing price of the data set.
+  
+Data preparation 
+    
+Here the Closing price is chosen as the target variable and stored in a new data frame. With the help of 
+Mathlab library the developer as plotted the graph of the Closing price of the data set.
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/c70502ad-d9ec-4ac2-8bf9-096bcd2bda5c)
 
-First we create a new variable Price and put the Close price as a data frame in it. With the help of plt() the 
-developer will plot the price variable. 
+
+First we create a new variable Price and put the Close price as a data frame in it. With the help of plt() plot the price variable. 
 Xticks() functions helps the developer to plot the values according to the range set by the developer, this 
 function controls of the plot range, tick locations, and the tick labels. plt.title() is a function where it helps 
 to the set the title of the graph by the developer, plt.xlabel() and plt.ylabel() allows to set the names for the 
@@ -53,6 +57,7 @@ x-axis and y-axis respectively for the developer (Vanderplas, 2017).
 
 
 Model building :-
+
 Steps involved in the process of building a model include establishing methods for data collection, 
 comprehending and paying attention to what is significant in the data in order to answer the questions that 
 you are posing, and creating a statistical, mathematical, or simulation model in order to acquire 
@@ -66,6 +71,8 @@ function as sigmoid and loss function as mse (mean-squared error), the batch siz
 epochs as 250.
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/8ab18a90-5e32-4ef9-9121-8f07af0cf10b)
+
+
 Here the epochs is 250 because the more number of times the model is trained the less overfitting we get 
 which leads us to a better accuracy result. Even if the epochs is set to higher value also then the model will 
 have a chance to overfit. To get the more accuracy of for the model the developer will keep changing the 
@@ -82,48 +89,72 @@ summary of the model.
 
 
  Model Training :-
+ 
  ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/9c9a2157-d14c-4e1a-b3ec-2215bddf419f)
+
 The history variable is used for getting the training data, the hyper parameters are stated above in the code 
 and the shuffle is set to false. The data which the developer is working on is sequential model. If the shuffle 
 is set true then the date in the data will get messed up making the values go wrong as this is not a 
 chorological data.
 
+
 2.Auto Aggressive Integrated Moving Average (ARIMA):-
+
 First import the required libraries for building the ARIMA model. 
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/387fb60b-2007-4956-824f-470c354603b8)
 
+
 2.1 Data Preparation:
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/ea6e3f17-5468-4686-b527-17db0a1581fa)
 
+
 2.2Data Split :
+
 now split the data into 90/10.
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/4f881ea7-db79-4caf-9465-e59d519c5d68)
 
+
 Traning the Data
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/5d0d64fc-0791-44e0-aad9-df14b2f116ed)
 
+
 2.3 Model Building :
+
 Now build the model. Before building the model the developer will create an empty list 
 and store the length of the test_data which will be used while building the model.
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/fb3e37f7-de2e-4a5c-9c4f-378fac757045)
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/9630bb2c-992f-4567-a37a-9b874eab1387)
 
 
+
 3.Results:
+
 Two different models to predict the values from the data set. Open and Close are 
 the two column used by the developer with the help of LSTM and ARIMA model.
 
+
 3.1 Model Comparison :
+
 This section will show the clear comparison of the column and show the results between the two different 
 models and recommend the best the model. 
 For the LSTM algorithm the data split is done for 80/20, whereas for the ARIMA algorithm the data split 
 is done for 90/10.
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/92bfae5b-54b4-4796-b39d-23d527ba3894)
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/47718d93-2e32-470c-b06c-67b92df86585)
+
 The above table explains the bitcoin price which the data has been processed with the LSTM algorithm 
 with the number of epochs of 250 with a batch size of 5. The predicted price as shown above in the figure. 
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/b57a5d77-4796-4b26-ae82-2ef75caaf52a)
+
 The Open column in the data set is processed through ARIMA model and the above figure shows the price 
 predicted. 
 Comparing the results obtained from the above models and MAPE value compared the best model is 
