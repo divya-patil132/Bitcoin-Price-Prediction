@@ -5,13 +5,16 @@ First, we import the required libraires for data manipulation and data visualiza
 environment. 
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/0b759e6c-df3b-43c4-b3b5-08a1d7e030a0)
+
 The initial data set is small enough to directly import into the collab environment. The data set is imported 
 in the format of .CSV file.
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/071d69b3-e42e-49e3-9bab-2366f2f27efa)
+
 The data set is successfully imported into the collab environment.
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/6b9e7098-1336-4e1a-b4cf-c5edf83cf8a3)
+
 The data set has a total of 2713 columns and a total of 7 rows
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/e34551e4-cb81-4695-9294-b6ab8d5bfb01)
