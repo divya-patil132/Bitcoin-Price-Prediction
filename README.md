@@ -62,7 +62,7 @@ Steps involved in the process of building a model include establishing methods f
 comprehending and paying attention to what is significant in the data in order to answer the questions that 
 you are posing, and creating a statistical, mathematical, or simulation model in order to acquire 
 understanding and make predictions.
-Here the developer will use the LSTM model with the model layer of 50 neurons and the relu activation 
+Here the LSTM model with the model layer of 50 neurons and the relu activation 
 function. With the help of keras.model the developer will install the sequential model, as for the activation 
 function the developer will be using adam , Dense, LSTM, LeakyReLU,Dropout are the layers imported 
 from Kears library. 
