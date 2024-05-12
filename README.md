@@ -39,7 +39,8 @@ equals 16106.42.
     Here the Closing price is chosen as the target variable and stored in a new data frame. With the help of 
     Mathlab library the developer as plotted the graph of the Closing price of the data set.
 
-    ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/98e7f3b4-c5bd-4761-a6df-e04c9e3abcc8)
+![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/c70502ad-d9ec-4ac2-8bf9-096bcd2bda5c)
+
 First we create a new variable Price and put the Close price as a data frame in it. With the help of plt() the 
 developer will plot the price variable. 
 Xticks() functions helps the developer to plot the values according to the range set by the developer, this 
