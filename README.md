@@ -18,8 +18,11 @@ The data set is successfully imported into the collab environment.
 The data set has a total of 2713 columns and a total of 7 rows
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/e34551e4-cb81-4695-9294-b6ab8d5bfb01)
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/5ba39621-4fe9-4a54-b5d8-8fa67dc912c7)
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/b5056006-f171-4af8-b15c-3361f215c59b)
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/630ee2bb-763a-4efd-9c2e-604f95395f26)
 
 The above picture shows that there are no missing values or null values in the data set. All the variables in 
@@ -28,7 +31,9 @@ Using the library matplotlib with the functions plt.plot() detailed description 
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/bc3f9f21-ed68-42eb-953f-7c43f2389fce)
 
+
 • Open
+
 It is the most important time to check out for the price of the bitcoin at this moment because it is 
 starting for the day when the open price is known. This is because the open variable in the data set 
 means it the price of the bitcoin at the starting point of the bitcoin when it is created or when it is 
@@ -36,12 +41,13 @@ mined. In other words, it is the price of the bitcoin when it is created. There 
 included in the data set, with a mean value of 11311.04 and a standard deviation of open price that
 equals 16106.42.
 
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/46e11a15-7e68-407f-8dde-60e4e5960305)
 
 
 1.Long short-term Memory (LSTM)
   
-Data preparation 
+1.1Data preparation :
     
 Here the Closing price is chosen as the target variable and stored in a new data frame. With the help of 
 Mathlab library the developer as plotted the graph of the Closing price of the data set.
@@ -56,7 +62,7 @@ to the set the title of the graph by the developer, plt.xlabel() and plt.ylabel(
 x-axis and y-axis respectively for the developer (Vanderplas, 2017).
 
 
-Model building :-
+1.2Model building :-
 
 Steps involved in the process of building a model include establishing methods for data collection, 
 comprehending and paying attention to what is significant in the data in order to answer the questions that 
@@ -69,6 +75,7 @@ from Kears library.
 The number of units which the number neurons are set as 64, the learning rate is set as 0.0001, the activation 
 function as sigmoid and loss function as mse (mean-squared error), the batch size as 5 and the number of 
 epochs as 250.
+
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/8ab18a90-5e32-4ef9-9121-8f07af0cf10b)
 
@@ -85,10 +92,11 @@ It is the layer that is considered to be the most fundamental in neural networks
 Now after the model building is done the developer will use the model.summay() function to get the 
 summary of the model.
 
+
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/7a587ab1-84c8-445a-bc4b-c25325460fae)
 
 
- Model Training :-
+1.3 Model Training :-
  
  ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/9c9a2157-d14c-4e1a-b3ec-2215bddf419f)
 
@@ -117,12 +125,12 @@ now split the data into 90/10.
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/4f881ea7-db79-4caf-9465-e59d519c5d68)
 
 
-Traning the Data
+2.3Traning the Data:
 
 ![image](https://github.com/divya-patil132/Bitcoin-Price-Prediction/assets/127880624/5d0d64fc-0791-44e0-aad9-df14b2f116ed)
 
 
-2.3 Model Building :
+2.4 Model Building :
 
 Now build the model. Before building the model the developer will create an empty list 
 and store the length of the test_data which will be used while building the model.
@@ -161,7 +169,7 @@ Comparing the results obtained from the above models and MAPE value compared the
 ARIMA for bitcoin price prediction. The reason is it is a common tool in demand forecasting, such as when 
 anticipating the future demand for food supply or stocks prediction and bitcoin price prediction, and one of 
 the common applications of this tool is as follows: When it comes to decisions regarding the supply chain, 
-the developer will now have precise rules to follow. ARIMA models can also be used to forecast the future 
+now have precise rules to follow. ARIMA models can also be used to forecast the future 
 price of the bitcoin by analysing historical data. This is done using the data from the past (Bora, 2021). 
 The layers that are present between the input and output layers are considered to be hidden layers. Because 
 of this fundamental concept, deep learning networks are frequently referred to as "black boxes," and they 
