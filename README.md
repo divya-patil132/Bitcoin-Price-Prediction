@@ -2,7 +2,7 @@
 A Machine Learning Approach to predict the current Bitcoin Price.Through this project, our goal is to provide valuable insights for investors, traders, and stakeholders in the cryptocurrency space, ultimately aiding in informed decision-making and maximizing profitability in Bitcoin trading and investment strategies.
 
 First, we import the required libraires for data manipulation and data visualization for the data set into the 
-environment. 
+environment..
 
 
 
@@ -234,7 +234,7 @@ the two column used by the developer with the help of LSTM and ARIMA model.
 
 
 
-3.1 Model Comparison :
+3.1 Model Comparison:
 
 
 
